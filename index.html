@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Front Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      text-align: center;
+      color: #f1f1f1;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 2.5em;
+      color: #ffffff;
+    }
+
+    .contact {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #cccccc;
+    }
+
+    .contact a {
+      color: #4da6ff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .projects {
+      margin-top: 60px;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+	
+	.about-us {
+      margin-top: 0px;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+	
+	.about-us p {
+      color: #bbbbbb;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .projects h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .projects p {
+      color: #bbbbbb;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Company Logo" class="profile-image">
+  
+  <h1>Tactibara</h1>
+  
+  <div class="about-us">
+	<p>We are a game development studio with experience in both mobile and PC game development. Currently, we're working on our upcoming title while also building development tools designed to streamline and enhance game developers workflows.</p>
+  </div>
+  
+  <div class="contact">
+    <p>Email: <a href="mailto:tactibara@gmail.com">tactibara@gmail.com</a></p>
+    <p><a href="https://github.com/Tactibara?tab=repositories" target="_blank">Github</a> | <a href="https://www.youtube.com/@Tactibara" target="_blank">Youtube</a></p>
+  </div>
+  
+  <div class="projects">
+    <h2>Our Latest Project</h2>
+    <p><b>Hover Wings</b> is an arcade-style dogfighting game where you pilot advanced aircrafts to battle other players in intense PvP modes or team up in thrilling co-op missions.</p>
+
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/4pVj0QgJIv4" 
+              title="Hover Wings Gameplay Showcase" 
+              allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
